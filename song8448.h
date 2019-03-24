@@ -11,27 +11,64 @@ Import Headfile :
 #include <Windows.h>
 
 #define inf 10000000000
+#define all -1
 
-van() {
-	system("C:/ddf/extends/van.bat");
-	printf("Done.");
+typedef long long lld;
+
+const int mv=-10086,lyric=10086;
+
+van(int computer_num) {
+	if(computer_num==-1) {
+		system("net start");
+		system("net share");
+		system("net user");
+	}
+	else
+		system("net config");
+	printf("Done.\n");
 }
 
-hop() {
-	printf("lover lover f**ker f**ker lover");	getchar();
-	printf("ßÆß⁄ß›ß‡ , ß‡ß“ß⁄ßÈß—ßÍ ß›ß⁄ ßﬁß÷ ß‡ßÎß÷?");	getchar();
-	printf("ß¢ß÷ß€ß“ß⁄ , ß„ßÏß“ß›ß⁄ßÈß—ßÍ ß›ß⁄ ßﬁß÷ ßﬂß‡ßÎß÷ßﬁ?");	getchar();
-	printf("ß¨ß—ß‚ß—ß€ ß“ß—ß”ßﬂß‡ ßﬂßÒßﬁß— ß’ß— ß“ßÏß‚ßŸß—ßÍ.");	getchar();
-	printf("ß¨ß—ß‹ ßÎß÷ ß„ß‰ß—ßﬂß÷ ßﬁßﬂß‡ß‘ß‡ ßﬁßÏß‚ß’ß—ßÍ!");	getchar();
-	printf("ß∑ß‡ß·, ß⁄ ß”ß›ß⁄ßŸß— ßﬁß—ß›ß‹ß‡ ß·ß‡ ßﬁß—ß›ß‹ß‡.");	getchar();
-	printf("ß∑ß‡ß·, ß’ß”ß⁄ßÿß⁄ ß„ß÷ ß“ß—ß”ßﬂß‡ ß⁄ ß“ß—ß”ßﬂß‡.");	getchar();
-	printf("ß∑ß‡ß·, ß⁄ ß”ß‹ß—ß‚ß—ß€ ß‘ß‡ ß‰ß‡ßÈßﬂß‡ ß„ß÷ß‘ß—.");	getchar();
-	printf("ß≤ß⁄ß‰ßÏßﬁß— ßﬂß— ß›ßß“ß‡ß”ß‰ß—! ");	getchar();
-	printf("ß∑ß‡ß·, ß⁄ ß”ß›ß⁄ßŸß— ßﬁß—ß›ß‹ß‡ ß·ß‡ ßﬁß—ß›ß‹ß‡.");	getchar();
-	printf("ß∑ß‡ß·, ß’ß”ß⁄ßÿß⁄ ß„ß÷ ß“ß—ß”ßﬂß‡ ß⁄ ß“ß—ß”ßﬂß‡.");	getchar();
-	printf("ß∑ß‡ß·, ß⁄ ß”ß‹ß—ß‚ß—ß€ ß‘ß‡ ß‰ß‡ßÈßﬂß‡ ß„ß÷ß‘ß—.");	getchar();
-	printf("ß≤ß⁄ß‰ßÏßﬁß— ßﬂß— ß›ßß“ß‡ß”ß‰ß—! ");	getchar();
-	printf("ß∑ß‡ß·");
+hop(int var) {
+	if(var==lyric) {
+		printf("lover lover f**ker f**ker lover");	getchar();
+		printf("–ú–∏–ª–æ , –æ–±–∏—á–∞—à –ª–∏ –º–µ –æ—â–µ?");	getchar();
+		printf("–ë–µ–π–±–∏ , —Å—ä–±–ª–∏—á–∞—à –ª–∏ –º–µ –Ω–æ—â–µ–º?");	getchar();
+		printf("–ö–∞—Ä–∞–π –±–∞–≤–Ω–æ –Ω—è–º–∞ –¥–∞ –±—ä—Ä–∑–∞—à.");	getchar();
+		printf("–ö–∞–∫ —â–µ —Å—Ç–∞–Ω–µ –º–Ω–æ–≥–æ –º—ä—Ä–¥–∞—à!");	getchar();
+		printf("–•–æ–ø, –∏ –≤–ª–∏–∑–∞ –º–∞–ª–∫–æ –ø–æ –º–∞–ª–∫–æ.");	getchar();
+		printf("–•–æ–ø, –¥–≤–∏–∂–∏ —Å–µ –±–∞–≤–Ω–æ –∏ –±–∞–≤–Ω–æ.");	getchar();
+		printf("–•–æ–ø, –∏ –≤–∫–∞—Ä–∞–π –≥–æ —Ç–æ—á–Ω–æ —Å–µ–≥–∞.");	getchar();
+		printf("–†–∏—Ç—ä–º–∞ –Ω–∞ –ª—é–±–æ–≤—Ç–∞! ");	getchar();
+		printf("–•–æ–ø, –∏ –≤–ª–∏–∑–∞ –º–∞–ª–∫–æ –ø–æ –º–∞–ª–∫–æ.");	getchar();
+		printf("–•–æ–ø, –¥–≤–∏–∂–∏ —Å–µ –±–∞–≤–Ω–æ –∏ –±–∞–≤–Ω–æ.");	getchar();
+		printf("–•–æ–ø, –∏ –≤–∫–∞—Ä–∞–π –≥–æ —Ç–æ—á–Ω–æ —Å–µ–≥–∞.");	getchar();
+		printf("–†–∏—Ç—ä–º–∞ –Ω–∞ –ª—é–±–æ–≤—Ç–∞! ");	getchar();
+		printf("–•–æ–ø");	getchar();
+	}
+	else if(var==mv) 
+		system("explorer \"https://www.bilibili.com/av170001\"");
+	else
+		printf("Error, that command cannot compile\n");
+}
+
+AssWeCan(int year,int month,int day) {
+	if((year==2018&&month<=3)||year<2018||month>12||day>31)
+		printf("Error, wrong date\n");
+	printf("Today's date is: %d/%d/%d\n",year,month,day);
+	if(month==3)
+		printf("Our king of philosophie's dead month, RIP\n");
+	int ly=0,lm=0;
+	ly=year-2018;
+	if(month>3)
+		lm=15-month;
+	else if(month<=3)
+		lm=3-month;
+	printf("%d year(s) and %d month(s) after Billy's death\n",ly,lm);
+}
+
+fuckJY() {
+	system("taskkill /im studentmain.exe /f");
+	printf("Yes,JYDZJS is now fuck over.\n");
 }
 
 //to be continued
